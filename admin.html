@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Admin-Control</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="admin.css">
+        <script src="https://kit.fontawesome.com/622c57c312.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <br><br><br>
+        <nav class="admin-nav">
+            <a href="index.html">Home</a>
+        </nav>
+        <br><br>
+        <div class="admin">
+            <h2>Hello Admin</h2>
+        <li><a href="#" style="color: darkblue;" onclick="showform2()">Admin-Control</a></li>    
+        </div>
+        <div class="form2">
+        <hr>
+            <fieldset id="theform2" style="display: none;">
+            <form action="Check_1.py" method="post">
+                <table>
+                    <tr>
+                        <td>UserID</td>
+                        <td><input type="text" name="userid" class="form-control" autocomplete="off" placeholder="UserId" required></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="pswd" class="form-control" placeholder="password" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Submit" class="form-control"></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+            </fieldset>
+            <script type="text/javascript">
+                function showform2(){
+                    document.getElementById("theform2").style.display="block";
+                }
+            </script>    
+        </div>
+        <div class="quote">
+            <h2>"Quality means doing it right when no one is watching."</h2>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+       
+        <div class="social">
+            <h4>Contact Us</h4>
+            <br>
+        <ul class="social-menu">
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-linkedin"></i></li>
+        </ul> 
+        </div>  
+
+       
+    </body>
+</html>

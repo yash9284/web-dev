@@ -1,0 +1,85 @@
+body{
+    margin: 0px;
+    background-image: url("back2.jpeg");
+    background-size:cover;
+}
+.admin{
+    text-align: center;
+    color: black;
+}
+.form2{
+    top: 400px;
+     text-align: center;
+    padding-left: 400px;
+    padding-right: 100px;
+    background-color: transparent;
+    border: none;
+    opacity: 0.6;
+    filter: alpha(opacity=60); 
+}
+
+.quote{
+    padding-top: 100px;
+    text-align: center;
+    color:black;
+}
+.admin-nav{
+    float: right;
+    height: 30px;
+}
+.admin-nav a{
+    font-size: 25px;
+    font-family: "Helvetica Neue";
+    color: black;
+    font-weight: 700;
+    padding-right: 80px;
+    display: inline-block;
+    padding-top: 12%;
+}
+.social{
+	text-align: center;
+
+}
+
+.social-menu{
+	display: flex;
+	list-style-type: none;
+	padding-left: 620px;
+}
+.social-menu i{
+	color: #FFF;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 25px;
+	margin-right: 20px;
+	transition: all0.2s ease-in-out;
+	display: flex;
+	justify-content: center;
+}
+.social-menu i:before{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	font-weight: 400;
+}
+.social-menu a{
+	text-decoration: none;
+}
+.fa-linkedin{
+	background: #007bb6;
+}
+.fa-facebook{
+	background: #3b5998;
+}
+.fa-twitter{
+	background: #3b5998;
+}
+
+.fa-instagram{
+	background: darkmagenta;
+}
+.social-menu i:hover{
+	opacity: 0.7;
+	border-radius: 0;
+}

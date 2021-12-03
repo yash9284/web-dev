@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CAR-SOWROOM</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="car-shop.css">
+        <script src="https://kit.fontawesome.com/622c57c312.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <menu>
+            <label for="drop" class="toggle" style="background-color:bisque;">Menu</label>
+            <input type="checkbox" id="drop" />
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admin.html">Admin-Control</a></li> 
+                    
+                    <div class="yas">    
+                    <li>
+                        <label for="drop-3" class="toggle" >Car-Company &#9660;</label>
+                        <a href="#">Car-Company</a>
+                        <input type="checkbox" id="drop-3"/>
+                        <ul>
+
+                            <li>   
+                            <label for="drop-3" class="toggle">Skoda &#9660; </label> 
+                            <a href="#">Skoda</a>   
+                            <input type="checkbox" id="drop-3"/>
+                            <ul>
+                                <li><a href="https://www.cardekho.com/skoda/octavia">SEDAN</a></li>
+                                <li><a href="https://www.cardekho.com/skoda/kushaq">SUV</a></li>
+                            </ul>
+                            </li>    
+
+
+                            <li>
+                            <label for="drop-3" class="toggle">BMW &#9660; </label>
+                            <a href="#">BMW</a>           
+                            <input type="checkbox" id="drop-3"/>
+                            <ul>
+                                <li><a href="https://www.cardekho.com/carmodels/BMW/BMW_3_Series">SEDAN</a></li>
+                                <li><a href="https://www.cardekho.com/carmodels/BMW/BMW_X1">SUV</a></li>
+                                <li><a href="https://www.cardekho.com/bmw/x6">HATCHBACK</a></li>
+                            </ul>    
+                            </li>
+
+
+                            <li> 
+                            <label for="drop-3" class="toggle">Honda &#9660; </label>
+                            <a href="#">Honda</a>         
+                            <input type="checkbox" id="drop-3"/>
+                            <ul>
+                                <li><a href="https://www.cardekho.com/carmodels/Honda/Honda_City_2017-2020">SEDAN</a></li>
+                                <li><a href="https://www.cardekho.com/honda/wr-v">SUV</a></li>
+                                <li><a href="https://www.cardekho.com/honda/jazz">HATCHBACK</a></li>
+                            </ul>
+                            </li>
+
+
+                            <li> 
+                                <label for="drop-3" class="toggle">Audi &#9660; </label>
+                                <a href="#">Audi</a>         
+                                <input type="checkbox" id="drop-3"/>
+                                <ul>
+                                    <li><a href="https://www.cardekho.com/audi/a4">SEDAN</a></li>
+                                    <li><a href="https://www.cardekho.com/audi/e-tron">HATCHBACK</a></li>
+                                    <li><a href="https://www.cardekho.com/audi/q8">SUV</a></li>
+                                </ul>
+                                </li>
+
+
+                                <li> 
+                                    <label for="drop-3" class="toggle">Suzuki &#9660; </label>
+                                    <a href="#">Suzuki</a>         
+                                    <input type="checkbox" id="drop-3"/>
+                                    <ul>
+                                        <li><a href="https://www.carwale.com/maruti-suzuki-cars/ciaz/">SEDAN</a></li>
+                                        <li><a href="https://www.carwale.com/maruti-suzuki-cars/s-cross/">SUV</a></li>
+                                        <li><a href="https://www.carwale.com/compare-cars/maruti-suzuki-swift-vs-maruti-suzuki-baleno/?source=38">HATCHBACK</a></li>
+                                    </ul>
+                                    </li>
+                        </ul>
+                        </li> 
+                    </div>       
+                       
+                </ul>
+        </menu>
+        <br>
+        
+        <div class="site-content">
+            <h1 style="color:black;">-> Welcome To Our Online Car Showroom !</h1>
+            <img src="back.gif">
+            <br>
+            <div class="detail">
+                <br>
+                <form class="msform">
+                    <li class="active"><a href="#" style="color:darkblue;" onclick="showform1()">REGISTER</a></li>
+                </form>
+
+                <br>
+                <div class="form">  
+                <fieldset id="theform1" style="display: none;">    
+                <form action="check.py" method="POST">
+                        <table> 
+                            <tr>
+                                <td>NAME</td>
+                                <td><input type="text" name="uid" class="form-control" autocomplete="off" required ></td>
+                            </tr>
+                            <tr>
+                                <td>EMAIL</td>
+                                <td><input type="email" name="email" placeholder="Email" class="form-control" required></td>
+                            </tr>
+                            <tr>
+                                <td>PHONE</td>
+                                <td><input type="number" name="phone" placeholder="Phone" class="form-control" required></td>
+                            </tr>                            
+                            <tr>
+                                <td>CAR-DETAILS </td>
+                                <td><textarea name="Text" cols="40" rows="4" input type="text" class="form-control"></textarea></td>
+                            </tr>                           
+                            <tr>
+                                <td><input type="submit" value="Submit" class="form-control"></td>
+                                
+                            </tr>
+                        </table>
+                        <br>
+                        <h3>Thank You,We Will Guide You Shortly</H3>
+                        <br><br>
+                        <h1>Thank You</h1>
+        
+                </form>
+                </fieldset>
+                <script type="text/javascript">
+                    function showform1(){
+                        document.getElementById("theform1").style.display="block";
+                    }
+                </script>
+                </div>
+            </div>
+            <hr>
+            <h5>Please connect with us for more information. </h5>
+        </div> 
+        <div class="social">
+            <h4>Connect Us</h4>
+            <br>
+        <ul class="social-menu">
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-linkedin"></i></li>
+        </ul> 
+        </div>  
+
+    </body>
+</html>

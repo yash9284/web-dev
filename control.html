@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Control</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="control.css">
+        <script src="https://kit.fontawesome.com/622c57c312.js" crossorigin="anonymous"></script> 
+        
+    </head>
+    <body>
+        <h3 style="text-align: center;color:hsl(hue, saturation, lightness)">Welcome Admin!</h3>
+        <div class="main">
+            <div class="container">
+                <br>
+                <ul> 
+                    <a href="#" class="msform1" style="color:darkblue;" onclick="showform1()">New Car Registration</a>
+                    <a href="car_list.py" class="msform3" style="padding-left: 380px; color: black;" >Car-List</a>
+                    <a href="cust_list.py" style="padding-left: 10px; color: black;">Customers List</a>
+                    <a href="#" class="msform2" style="color: darkblue; float: right;"  onclick="showform3()">Modify-price</a>  
+                </ul>    
+            </div>
+            <div class="modify">
+            <fieldset id="theform3" style="display: none;">
+            <form action="price-update.py" method="post">
+                <table>
+                    <tr>
+                        <td>Car-Name</td>
+                        <td><input type="text" name="cnm" placeholder="Car-Name" required></td>
+                    </tr>   
+                    <tr>
+                        <td>New-Price</td>
+                        <td><input type="number" name="npr" placeholder="New-Price" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit"  value="Update-Price"></td>
+                    </tr>
+                </table>
+            </form>    
+            </fieldset> 
+            
+            <script type="text/javascript">
+                function showform3(){
+                    document.getElementById("theform3").style.display="block";
+                }
+            </script>
+            </div>
+            <div class="mac">
+                <br>
+                <div class="one">  
+                <fieldset id="theform2" style="display: none;">
+                <form action="CarRegister.py" method="post">
+                    <table> 
+                        <tr>
+                            <td>Car-Company</td>
+                            <td><input type="text" name="comp" class="form-control" placeholder="Car-Company" required ></td>    
+                        </tr>
+                        <tr>
+                            <td>Car-Type</td>
+                            <td><input type="text" name="ctyp" placeholder="Car-Type" class="form-control" required></td>
+                        </tr>
+                        <tr>
+                            <td>Car-Name</td>
+                            <td><input type="text" name="cname" placeholder="Car-Name" class="form-control"  required ></td>
+                        </tr> 
+                        <tr>
+                            <td>Engine-Capacity</td>
+                            <td><input name="Ecap"  type="text" placeholder="Engine-Capacity" class="form-control"  required></td>
+                        </tr> 
+                        <tr>
+                            <td>Price</td>
+                            <td><input type="number" name="price" placeholder="Price" required></td>
+                        </tr> 
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Register"  class="form-control"></td>
+                        </tr>                         
+                    </table>
+                </form>    
+                </fieldset>   
+                <script type="text/javascript">
+                    function showform1(){
+                        document.getElementById("theform2").style.display="block";
+                    } 
+                </script>
+                </div>
+            </div>
+            
+        </div>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <hr style="color: aquamarine;">
+        <div class="social">
+            <h4 style="color: aliceblue;">Contact Us</h4>
+            <br>
+        <ul class="social-menu">
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-linkedin"></i></li>
+        </ul> 
+        </div>
+    </body>
+</html>
+
+
+
+
+

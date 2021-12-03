@@ -1,0 +1,68 @@
+body{
+    background-image: url("back3.jpg");
+    background-size: cover;
+}
+.one{
+    display: block;
+    height: 100px;
+    width: 400px;
+    opacity: 0.6;
+}
+.modify{
+    display: block;
+    float: right;
+    opacity: 0.6;
+    width: 400px;
+}
+
+
+.social{
+	text-align: center;
+    top: 600px;
+
+}
+
+.social-menu{
+	display: flex;
+	list-style-type: none;
+	padding-left: 620px;
+}
+.social-menu i{
+	color: #FFF;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 25px;
+	margin-right: 20px;
+	transition: all0.2s ease-in-out;
+	display: flex;
+	justify-content: center;
+}
+.social-menu i:before{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	font-weight: 400;
+}
+.social-menu a{
+	text-decoration: none;
+}
+.fa-linkedin{
+	background: #007bb6;
+}
+.fa-facebook{
+	background: #3b5998;
+}
+.fa-twitter{
+	background: #3b5998;
+}
+
+.fa-instagram{
+	background: darkmagenta;
+}
+.social-menu i:hover{
+	opacity: 0.7;
+	border-radius: 0;
+}
+
+

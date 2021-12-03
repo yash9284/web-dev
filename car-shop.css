@@ -1,0 +1,260 @@
+body{
+	background-color:cornflowerblue;
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+menu { 
+	margin:0;
+	padding: 0;
+	background-color:black;
+	height: 100px;
+}
+
+
+
+menu:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+
+menu ul {
+	float:right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+menu ul li {
+	margin: 0px;
+	display:inline-block;
+	
+	}
+
+menu a {
+	display:block;
+	padding:14px 20px;	
+	color:blanchedalmond;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+menu ul li ul li:hover { background-color:darkcyan; }
+
+menu a:hover { 
+	 background-color:none;
+	 color: chartreuse;
+}
+
+menu ul ul {
+	display: none;
+	position: absolute; 
+	top: 48px; 
+
+}
+
+
+	
+menu ul li:hover > ul {
+	display:inherit;
+}
+	
+menu ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+	border-bottom: 1px solid black;
+	background-color:black;
+}
+
+menu ul ul ul li {
+	position: relative;
+	top:-60px;
+	left:170px; 
+	background-color:darkslategrey;
+}
+
+	
+
+
+
+
+@media all and (max-width : 768px) {
+
+
+	menu {
+		margin: 0;
+	}
+
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	.toggle {
+		display: block;
+		background-color:darkseagreen;
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		background-color:black;
+	}
+
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	menu ul li {
+		display: block;
+		width: 100%;
+		}
+
+	menu ul ul .toggle, 
+	menu ul ul a {
+		padding: 0 40px;
+	}
+
+	menu ul ul ul a {
+		padding: 0 80px;
+	}
+
+	menu a:hover,
+ 	menu ul ul ul a {
+		background-color:black;
+	}
+  
+	menu ul li ul li .toggle,
+	menu ul ul a,
+  menu ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	menu ul li ul li .toggle,
+	menu ul ul a {
+		 background-color:forestgreen;
+	}
+
+	menu ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+	}
+		
+	menu ul ul li:hover > ul,
+	menu ul li:hover > ul {
+		display: none;
+	}
+		
+
+	menu ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	menu ul ul ul li {
+		position: static;
+		
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	menu ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
+
+.site-content{
+    text-align: center;
+    position:unset;
+	top: 400px;
+	width: 100%;
+    image-rendering: auto;
+    image-resolution: 100*100;
+}
+.form{
+	top: 400px;
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 100px;
+
+}   
+input[type=text]:focus,
+input[type=password]:focus{
+    background-color: darkgray;
+    outline: none;
+	opacity: 0.5;
+} 
+
+.yas{
+	float:left;
+	padding-right: 800px;
+}
+.social{
+	text-align: center;
+
+}
+
+.social-menu{
+	display: flex;
+	list-style-type: none;
+	padding-left: 620px;
+}
+.social-menu i{
+	color: #FFF;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 25px;
+	margin-right: 20px;
+	transition: all0.2s ease-in-out;
+	display: flex;
+	justify-content: center;
+}
+.social-menu i:before{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	font-weight: 400;
+}
+.social-menu a{
+	text-decoration: none;
+}
+.fa-linkedin{
+	background: #007bb6;
+}
+.fa-facebook{
+	background: #3b5998;
+}
+.fa-twitter{
+	background: #3b5998;
+}
+
+.fa-instagram{
+	background: darkmagenta;
+}
+.social-menu i:hover{
+	opacity: 0.7;
+	border-radius: 0;
+}
+
+
